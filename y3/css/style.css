@@ -1,0 +1,110 @@
+
+.siteHeader{
+    width: auto;
+    height:  auto;
+}
+
+#brand--label{
+    padding: 40px;
+    color: white;
+}
+
+
+
+/* SITE NAVIGATION */
+ .topMenu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    position: relative;
+    background-color: #252525;
+    width: 100vw;
+    height: 40px;
+}
+
+.topMenu ul {
+ 
+    margin: 0;
+    border: none;
+    
+
+}
+
+.topMenu ul li {
+    
+    float: left;    
+    margin-right: 4px;
+    font-size: 11px;
+    padding: 10px;
+    border: none;
+
+}
+
+.topMenu ul:nth-child(1) li:nth-child(1){
+    
+    
+    color: black;
+    background-color: white;
+}
+
+.nav--left{
+    float: left;
+    flex-grow: 1;
+}
+
+.nav--right{
+    float: right;
+    color: white;
+}
+
+
+
+.menuBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: content;
+    height: 70px;
+    background-color: white;
+
+    margin: 20px;
+}
+
+.menuBar .logo{
+    flex-grow: 1;
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+}
+
+.menuBar .logo  {
+    text-transform: uppercase;
+}
+
+.menuBar ul li {
+    padding: 20px;
+
+}
+
+.menuBar ul li {
+    float: left;
+    margin-right: 4px;
+}
+
+.menu--items{
+    float: left;
+}
+
+/* SHOPPING ICONS */
+.shopping--icons img {
+    height: 20px;
+}
+
+
+
+
+
+
