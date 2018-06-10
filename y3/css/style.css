@@ -1,19 +1,87 @@
-
-.siteHeader{
-    width: auto;
-    height:  auto;
+.relative {
+    position: relative;
 }
 
-#brand--label{
+.siteHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ;
+    height: auto;
+    /* padding-bottom: 40px; */
+    /* border: 1px solid lightgrey; */
+    z-index: 999;
+    transition: 1s;
+}
+
+#brand--label {
     padding: 40px;
     color: white;
 }
 
+/* FULL SCREEN */
 
+.full-screen-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.full-screen-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.full-screen-hero #z-index-high {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    width: 400px;
+    height: 900px;
+}
+
+#z-index-low {
+    z-index: 999;
+    /* mix-blend-mode: exclusion; */
+}
+
+#z-index-high {
+    z-index: -999;
+}
+
+/* NEWS SIDEBAR */
+
+.news {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    color: black;
+    z-index: 100;
+}
+
+.news ul li {
+    cursor: crosshair;
+}
+
+.news ul li:nth-child(1) {
+    font-weight: bolder;
+}
+
+.news ul li:nth-last-child(1) {
+    color: red;
+    opacity: 0.5;
+}
+
+.news ul li:nth-last-child(1):hover {
+    opacity: 1;
+}
 
 /* SITE NAVIGATION */
- .topMenu {
 
+.topMenu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -21,72 +89,83 @@
     flex-basis: content;
     position: relative;
     background-color: #252525;
-    width: 100vw;
+    width: 100%;
     height: 40px;
+    border: none;
 }
 
 .topMenu ul {
- 
     margin: 0;
     border: none;
-    
-
 }
 
 .topMenu ul li {
-    
-    float: left;    
+    float: left;
     margin-right: 4px;
     font-size: 11px;
     padding: 10px;
     border: none;
-
 }
 
-.topMenu ul:nth-child(1) li:nth-child(1){
-    
-    
+.topMenu ul:nth-child(1) li:nth-child(1) {
     color: black;
     background-color: white;
+    border: 2px solid white;
 }
 
-.nav--left{
+.nav--left {
     float: left;
     flex-grow: 1;
+    margin-left: 0;
+    padding-left: 0;
 }
 
-.nav--right{
+.nav--left li {
+    border: none;
+}
+
+.nav--right {
     float: right;
     color: white;
 }
 
-
+/* BOTTOM MENU NAVIGATION */
 
 .menuBar {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-content: center;
     flex-basis: content;
-    height: 70px;
+    height: 80px;
+    margin: 0;
     background-color: white;
-
-    margin: 20px;
 }
 
-.menuBar .logo{
+.menuBar .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: content;
     flex-grow: 1;
     font-family: "Source Sans Pro";
     font-weight: 700;
+    font-size: 13px;
 }
 
-.menuBar .logo  {
+.menuBar .logo {
     text-transform: uppercase;
+}
+
+.logo {
+    height: 100px;
+}
+
+.menuBar ul {
+    padding: 20px;
 }
 
 .menuBar ul li {
     padding: 20px;
-
 }
 
 .menuBar ul li {
@@ -94,17 +173,405 @@
     margin-right: 4px;
 }
 
-.menu--items{
+.menu--items {
     float: left;
 }
 
+/* SUB MENU
+* height -> 315px;
+*/
+
+.sub--menu {
+    position: relative;
+    height: 0px;
+    background-color: #fafafa;
+    transition: 1s;
+    z-index: 2000;
+}
+
+.sub--menu ul li {
+    font-size: 11px;
+}
+
+.sub--menu ul li:hover {
+    cursor: pointer;
+}
+
+.sub--menu h3 {
+    font-size: 24px;
+}
+
+.sub--menu .close--section {
+    position: relative;
+    display: none;
+    justify-content: flex-end;
+    height: 36px;
+    margin-bottom: 25px;
+}
+
+.sub--menu .close-icon {
+    height: 36px;
+    margin: 25px 25px 25px 25px;
+}
+
+.sub--menu .close--section img {
+    height: 16px;
+}
+
+.sub--menu .close--section p {
+    font-size: 9px;
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+}
+
+/* SUB MENU MEN */
+
+.sub--menu-men {
+    display: none;
+    grid-template-columns: repeat(4, 208px);
+    justify-content: space-evenly;
+    animation: fadeIn 1.5s linear forwards;
+    transition: 1ms;
+}
+
+.sub--menu-women {
+    display: none;
+    grid-template-columns: repeat(4, 208px);
+    justify-content: space-evenly;
+    animation: fadeIn 1.5s linear forwards;
+    transition: 1ms;
+}
+
+.sub--menu-studio {
+    display: none;
+    grid-template-columns: repeat(1, 208px);
+    justify-content: space-evenly;
+    animation: fadeIn 1.5s linear forwards;
+    transition: 1ms;
+}
+
+.sub--menu-designer {
+    display: none;
+    grid-template-columns: repeat(1, 208px);
+    justify-content: space-evenly;
+    animation: fadeIn 1.5s linear forwards;
+    transition: 1ms;
+}
+
 /* SHOPPING ICONS */
+
 .shopping--icons img {
     height: 20px;
 }
 
+/* SHOP FEATURED CONTENT 
+* - make into a grid container
+*/
 
+.shop--container {
+    /* position: absolute;
+    top: 300px; */
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
 
+.shop-featured-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
 
+.shop-featured-content {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
 
+.grid--item {
+    /* height: 526px;
+    width: 412px; */
+    width: 100%;
+    height: 100%;
+}
 
+/* TESTING */
+
+.grid--item_img {
+    width: 100%;
+    height: 100%;
+    background: url("/assets/y3_storepage_shopbylook_women.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+/* OVERLAY STYLING
+    - includes full height overlay
+    - includes overlay for shop text
+*/
+
+.inner {
+    color: white;
+}
+
+.fullOverlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    transition: 500ms;
+    opacity: 0;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    font-weight: bolder;
+    background: rgba(0, 0, 0, 0.5);
+    /* background: none; */
+    padding: 15px;
+    width: 100%;
+    transition: 200ms;
+}
+
+.overlay .text {
+    padding: 10px;
+    border-bottom: 0px solid rgba(255, 255, 255, 1)
+}
+
+/* BUTTONS */
+
+.btn-featured {
+    position: absolute;
+    top: 450px;
+    width: 250px;
+    right: 100px;
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+    padding: 20px;
+    color: white;
+    background: white;
+    border: 1px solid #515151;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #000 50%, #fff 50%);
+    background-size: 190% 100%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.btn-featured:hover {
+    color: black;
+    background-color: #000;
+    background-position: bottom right;
+    transition: 0.5s;
+}
+
+.btn-shoes {
+    position: absolute;
+    bottom: 22px;
+    width: 250px;
+    right: 100px;
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+    padding: 20px;
+    color: white;
+    background: white;
+    border: 1px solid #515151;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, #000 50%, #fff 50%);
+    background-size: 190% 100%;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.btn-shoes:hover {
+    color: black;
+    background-color: #000;
+    background-position: bottom right;
+    transition: 0.5s;
+}
+
+/* SHOES SECTIONS */
+
+.shoes-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoes-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.shoes-item {
+    position: relative;
+    width: 493px;
+    height: 493px;
+}
+
+.shoes-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+.sign-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 125px;
+    background-color: #000;
+}
+
+.sign-up h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sign-up input {
+    width: 350px;
+    height: 35px;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    width: 100%;
+    height: 391px;
+    grid-template-columns: repeat(5, 208px);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer-grid-items {
+    width: 182px;
+    height: 208px;
+}
+
+.footer-grid-items h1 {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.footer-grid-items ul {
+    padding-left: 0;
+    justify-content: left;
+}
+
+.footer-grid-items ul li {
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+    font-size: 14px;
+}
+
+/* COPYRIGHT  */
+
+.copyright-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Source Sans Pro";
+    font-weight: 200;
+    color: white;
+    width: 100%;
+    height: 35px;
+    background-color: #272727;
+}
+
+.copyright-footer h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.copyright-footer ul {
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.copyright-footer ul li {
+    float: left;
+    font-size: 11px;
+    margin-right: 20px;
+}
+
+/* NAV ITEM BORDER */
+.logo {
+    position: relative;
+}
+
+#nav-men:before {
+    content: " ";
+    position: absolute;
+    top: 70px;  
+    width: 0px;
+    height:2px;
+    background: #000;
+    transition: 1s;
+}
+#nav-men:hover::before{
+    width: 30px;
+}
+#nav-women:before {
+    content: " ";
+    position: absolute;
+    top: 70px;  
+    width: 0px;
+    height:2px;
+    background: #000;
+    transition: 1s;
+}
+#nav-women:hover:before{
+    width: 40px;
+}
+#nav-studio:before {
+    content: " ";
+    position: absolute;
+    top: 70px;  
+    width: 0px;
+    height:2px;
+    background: #000;
+    transition: 1s;
+}
+#nav-studio:hover::before{
+    width: 50px;
+}
+#nav-designer:before {
+    content: " ";
+    position: absolute;
+    top: 70px;   
+    width: 0px;
+    height:2px;
+    background: #000;
+    transition: 1s;
+}
+#nav-designer:hover::before{
+    width: 90px;
+}

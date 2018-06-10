@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,9 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
     <!-- RESET STYLE -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' />
     <!-- BOOTSTRAP -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css' />
 
 
     <!-- MAIN CSS  -->
@@ -26,50 +27,427 @@
 
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:200,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro:200,400,700" rel="stylesheet">
 </head>
+
 <body>
-    
 
-<div class="siteHeader">
-    <nav class="topMenu ">
-        <ul class="nav--left">
-            <li><span id="brand--label"><span class="color--black">Y-3</span></span></li>
-            <li><span id="brand--label">Adidas By </span></li>
-        </ul>
 
-        <ul class="nav--right">
-            <li>store locator</li>
-            <li>login / registration</li>
-        </ul>
-    </nav>
+    <!-- SITE NAVIGATION -->
+    <div class="siteHeader">
 
-    <nav class="menuBar">
-        <ul class="logo">
-            <li class="logo--img">
-                <img src="./assets/Y3_logo.png" alt="">
-            </li>
+        <!-- SITE TOP MENU -->
+        <nav class="topMenu ">
+            <ul class="nav--left">
+                <li>
+                    <span id="brand--label">
+                        <span class="color--black">Y-3</span>
+                    </span>
+                </li>
+                <li>
+                    <span id="brand--label">Adidas By </span>
+                </li>
+            </ul>
 
-            <li>men</li>
-            <li>women</li>
-            <li>studio</li>
-            <li>yohji yamato</li>
-        </ul>
+            <ul class="nav--right">
+                <li>store locator</li>
+                <li>login / registration</li>
+            </ul>
+        </nav>
 
- 
+        <!-- SITE ITEMS MENU -->
+        <nav class="menuBar">
+            <ul class="logo">
+                <li class="logo--img">
+                    <img src="./assets/Y3_logo.png" alt="">
+                </li>
 
-        <ul class="shopping--icons">
-            <li><img src="./assets/search-magnifier-interface-symbol.svg" alt=""></li>
-            <li>
-                <img src="./assets/shopping-bag.svg" alt="">
-            </li>
-        </ul>
-
-    </nav>
-</div>
+                <li id="nav-men">men</li>
+                <li id="nav-women">women</li>
+                <li id="nav-studio">studio</li>
+                <li id="nav-designer">yohji yamato</li>
+            </ul>
 
 
 
+            <ul class="shopping--icons">
+                <li>
+                    <img src="./assets/search-magnifier-interface-symbol.svg" alt="">
+                </li>
+                <li>
+                    <img src="./assets/shopping-bag.svg" alt="">
+                </li>
+            </ul>
 
+        </nav>
+
+
+        <!-- SUBMENUS -->
+
+        <div class="sub--menu">
+            <div class="close--section">
+                <div class="close-icon">
+                    <img src="./assets/cross-out.png" alt="">
+                    <p>close</p>
+                </div>
+            </div>
+
+            <!-- MEN -->
+            <div class="sub--menu-men">
+                <div class="inspiration">
+                    <h3>Inspiration</h3>
+                    <ul>
+                        <li>View all Y-3 SS18</li>
+                        <li>Y-3 JAMES HARDEN</li>
+                        <li>VIEW ALL SALE</li>
+                        <li>SHOP BY LOOK</li>
+                        <li>BLOG</li>
+                    </ul>
+                </div>
+
+                <div class="footwear">
+                    <h3>Footwear</h3>
+                    <ul>
+                        <li>Y-3 ULTRABOOSTS</li>
+                        <li>Y-3 BLACKS</li>
+                        <li>Y-3 SAIKOU</li>
+                        <li>Y-3 KUSARI</li>
+                        <li>SNEAKERS</li>
+                        <li>VIEW ALL</li>
+                    </ul>
+                </div>
+
+                <div class="apparel">
+                    <h3>Apparel</h3>
+                    <ul>
+                        <li>TEES & POLOS</li>
+                        <li>SWEATSHIRT</li>
+                        <li>COATS & JACKETS</li>
+                        <li>PANTS</li>
+                        <li>SHIRTS</li>
+                        <li>VIEW ALL</li>
+                    </ul>
+                </div>
+
+                <div class="accesories">
+                    <h3>Accessories</h3>
+                    <ul>
+                        <li>HANDBAGS</li>
+                        <li>BELTS</li>
+                        <li>SOCKS</li>
+                        <li>OTHER ACCESSORIES</li>
+                        <li>VIEW ALL</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- WOMEN -->
+            <div class="sub--menu-women">
+                <div class="inspiration">
+                    <h3>Inspiration</h3>
+                    <ul>
+                        <li>View all Y-3 SS18</li>
+                        <li>Y-3 JAMES HARDEN</li>
+                        <li>VIEW ALL SALE</li>
+                        <li>SHOP BY LOOK</li>
+                        <li>BLOG</li>
+                    </ul>
+                </div>
+
+                <div class="footwear">
+                    <h3>Footwear</h3>
+                    <ul>
+                        <li>Y-3 ULTRABOOSTS</li>
+                        <li>Y-3 BLACKS</li>
+                        <li>Y-3 SAIKOU</li>
+                        <li>Y-3 KUSARI</li>
+                        <li>SNEAKERS</li>
+                        <li>VIEW ALL</li>
+                    </ul>
+                </div>
+
+                <div class="apparel">
+                    <h3>Apparel</h3>
+                    <ul>
+                        <li>TEES & POLOS</li>
+                        <li>SWEATSHIRT</li>
+                        <li>COATS & JACKETS</li>
+                        <li>PANTS</li>
+                        <li>SHIRTS</li>
+                        <li>DRESSES AND SKIRTS</li>
+                        <li>VIEW ALL</li>
+                    </ul>
+                </div>
+
+                <div class="accesories">
+                    <h3>Accessories</h3>
+                    <ul>
+                        <li>HANDBAGS</li>
+                        <li>BELTS</li>
+                        <li>SOCKS</li>
+                        <li>OTHER ACCESSORIES</li>
+                        <li>VIEW ALL</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- STUDIO -->
+            <div class="sub--menu-studio">
+                <div class="studio">
+                    <ul>
+                        <li>BLOG</li>
+                        <li>Y-3 SS18</li>
+                        <li>SHOWS</li>
+                        <li>CAMPAIGN</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- DESIGNER -->
+            <div class="sub--menu-designer">
+                <div class="designer">
+                    <ul>
+                        <li>CONCEPT</li>
+                        <li>THIS IS MY DREAMS.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- END -->
+    </div>
+
+
+
+    <!-- END OF SITE MENU -->
+
+    <!-- FULL SCREEN BACKGROUND HERO -->
+
+    <div class="full-screen-hero">
+
+        <div class="news">
+            <ul>
+                <li>NEW IN</li>
+                <li>SUMMER COLLECTION</li>
+                <li>SUBSCRIBE</li>
+                <li>CLEARANCE</li>
+            </ul>
+        </div>
+
+        <img src="https://media.giphy.com/media/eUbSCeg4LNfMY/giphy.gif" alt="" id="z-index-low">
+
+        <img src="./assets/stripe_bg.png" alt="" id="z-index-high">
+
+
+
+        <a href="http://store.y-3.com/us/y3store/men/view-all-ss18-sale">
+            <div class="btn-featured">
+                <span>Sales</span>
+
+            </div>
+        </a>
+
+
+    </div>
+
+
+
+
+    <!-- END OF HERO -->
+
+
+
+    <!-- START OF SHOP WRAPPER -->
+
+
+
+    <div class="shop--container">
+
+
+        <!-- SHOP FEATURED CONTENT  -->
+        <div class="shop-featured-content">
+            <div class="grid--item featured-one relative">
+                <img src="./assets/y3_storepage_shopbylook_women.jpg" alt="">
+
+
+
+                <!-- Overlay Shop Text -->
+                <a href="http://store.y-3.com/us/y3store/women/view-all-y-3-ss18">
+                    <div class="fullOverlay"></div>
+                </a>
+                <div class="overlay">
+                    <div class="text">
+                        <span class="inner"> SHOP Y-3 S/S18 </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="grid--item featured-two relative">
+                <img src="./assets/y3_storepage_shopbylook_women3.jpg" alt="">
+
+
+                <!-- Overlay Shop Text -->
+                <a href="http://store.y-3.com/us/women/fashionshow#to=3&details=false&item=0">
+                    <div class="fullOverlay"></div>
+                </a>
+                <div class="overlay">
+                    <div class="text">
+                        <span class="inner"> SHOP BY LOOK </span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="shop-featured-content">
+            <div class="grid--item featured-three relative">
+                <img src="./assets/y3_storepage_topbanners_men_left.jpg" alt="">
+
+                <!-- Overlay Shop Text -->
+                <a href="http://store.y-3.com/us/y3store/y3jamesharden">
+                    <div class="fullOverlay"></div>
+                </a>
+                <div class="overlay">
+                    <div class="text">
+                        <span class="inner"> SHOP FOR MEN </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="grid--item featured-four relative">
+                <img src="./assets/y3_storepage_topbanners_men_right.jpg" alt="">
+
+                <!-- Overlay Shop Text -->
+                <a href="http://store.y-3.com/us/y3store/men/view-all-y-3-ss18">
+                    <div class="fullOverlay"></div>
+                </a>
+
+                <div class="overlay">
+                    <div class="text">
+                        <span class="inner"> NEW COLLECTIONS</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- END OF SHOP WRAPPER -->
+    </div>
+
+
+    <!-- Shop Shoes -->
+    <div class="shoes-container">
+
+        <div class="shoes-grid">
+            <div class="shoes-item">
+                <img src="./assets/shoe.jpg" alt="">
+
+                
+                <a href="http://store.y-3.com/us/y3store/men/sneakers">
+                    <div class="btn-shoes">
+                            <span>Shoes for Men.</span>
+                        </div></a>
+
+            </div>
+            <div class="shoes-item">
+                <img src="./assets/women-shoe.jpg" alt="">
+              
+                <a href="http://store.y-3.com/us/y3store/women/sneakers">
+                    <div class="btn-shoes">
+                            <span>Shoes for Women.</span>
+                        </div></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="sign-up">
+            <h1>SUBSCRIBE FOR NEWS AND DISCOUNTS</h1>
+            <input type="text" placeholder="Enter Email ...">
+        </div>
+
+
+        <div class="footer-grid">
+
+            <div class="footer-grid-items">
+                <h1>Customer Support</h1>
+                <ul>
+                    <li>Help</li>
+                    <li>Order Tracker</li>
+                    <li>Return & Refunds</li>
+                    <li>Sizing</li>
+                    <li>Store Locator</li>
+                    <li>Site Map</li>
+                </ul>
+            </div>
+            <div class="footer-grid-items">
+                <h1>Company Info</h1>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Sustainability</li>
+                    <li>Affiliates</li>
+                    <li>Students</li>
+                    <li>Mobile Apps</li>
+                </ul>
+            </div>
+            <div class="footer-grid-items">
+                <h1>Partner Sites</h1>
+                <ul>
+                    <li>Y3 - en</li>
+                    <li>Y3 - jp</li>
+                    <li>Y3 - fr</li>
+                </ul>
+            </div>
+            <div class="footer-grid-items">
+                <h1>Privacy and Terms</h1>
+                <ul>
+                    <li>Privacy & Security</li>
+                    <li>Terms and Conditions</li>
+                </ul>
+            </div>
+            <div class="footer-grid-items">
+                <h1>Gift Cards</h1>
+                <ul>
+                    <li>Email a gift card</li>
+                    <li>Ship a gift card</li>
+                    <li>Check balance</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="copyright-footer">
+            <h3>Shipping to United States</h3>
+            <ul>
+
+                <li>returns</li>
+                <li>Legal Area</li>
+                <li>Follow Us</li>
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="./script/script.js"></script>
 </body>
+
 </html>
