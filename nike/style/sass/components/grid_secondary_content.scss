@@ -1,0 +1,82 @@
+.grid-secondary-wrapper{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .grid-secondary-content{
+
+        display:grid;        
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+      
+        overflow: hidden;
+
+    .grid-item {
+
+        position: relative;
+        width: 633px;
+        height: 567px;
+     
+        
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+         
+        }
+
+        .grid-subtitle{
+            position: absolute;
+            display: flex;
+            flex-direction: column; 
+            justify-content: flex-end;
+            align-items: center;
+            margin: 20px;
+            top:0;
+            left:  0;
+            bottom: 0;
+            background: transparent;
+
+            h1{ 
+
+                font-size: 24px;
+                font-weight: bolder;
+                font-family: "Encode Sans Condensed";
+                padding: 0;
+                margin: 0;
+
+                color: #171717;
+
+
+        
+            }
+
+            p{  
+                font-weight: 100;
+                color: #191919;
+            }      
+
+            .nike-secondary-btn{
+
+                &:hover{
+                    color: white;
+                    background-color: #464646;
+                }
+            }
+        }
+
+        
+
+    }
+
+}
+
+}
+
+

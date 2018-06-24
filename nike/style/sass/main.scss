@@ -1,0 +1,32 @@
+/**
+    Importing Base Stylesheets
+*/
+@import url('https://fonts.googleapis.com/css?family=Catamaran:100,400|Encode+Sans+Condensed:100,400,700');
+@import "base/base";
+
+/**
+    Importing Components Stylesheets
+*/
+@import "components/site_menu";
+@import "components/shoes_content";
+@import "components/video_content";
+@import "components/video_secondary_content";
+@import "components/grid_secondary_content";
+@import "components/fix_navbar";
+@import "components/feature_items";
+@import "components/footer";
+/**
+    Global Styling
+*/
+
+body{
+    position: relative;
+    font-family: "Encode Sans Condensed",Arial, Helvetica, sans-serif; 
+}
+
+/** 
+    GLOBAL FONT COLORS
+*/
+.red-font{
+    color: #ff2f2f;
+}

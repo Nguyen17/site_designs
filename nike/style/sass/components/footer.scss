@@ -1,0 +1,45 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background: #000;
+    
+    .footer-grid {
+        display: grid;
+        width: 60%;
+        height: 60vh;
+        grid-template-columns: repeat(3,1fr);
+
+        .footer-grid-item{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 228px;
+            color: white;
+            
+            .list-bold{
+
+                li {
+                    font-size: 14px;
+                    font-family: Helvetica;
+                    line-height: 2em;
+                    font-weight: bold;
+                    color: white;
+                    list-style: none;
+                }
+            }
+
+            ul {
+                li {
+
+                    font-size: 12px;
+                    color: #2e2e2e;
+                }
+            }
+            
+        }
+    }
+}

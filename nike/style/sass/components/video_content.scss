@@ -1,0 +1,74 @@
+video{
+    width: 100%;
+}
+.video-content{
+
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    p{
+        letter-spacing: -0.02em;
+        word-spacing: 0.08em;
+    }
+   
+
+}
+
+.video-initialize{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;  
+}
+
+.video-subtitle{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: justify;
+    color: #fff;
+    background: transparent;
+    z-index: 20;
+
+    h2{
+        font-weight: bolder;
+    }
+
+    p{
+        font-size: 13px;
+        max-width: 75ch;  
+    }
+
+    ul{
+        li{
+
+            font-size: 13px;
+            padding:2px;
+
+            
+            a{
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+                
+            }
+
+         
+        }
+    }
+}
+
+
+.video-subtitle ul li:hover {
+    color: #fafafa;
+}
+ 
+
+

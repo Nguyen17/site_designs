@@ -76,8 +76,6 @@ $("#nav-men").on("mouseover", function (){
     $(".sub--menu-studio").css({"display" : "none"});
     $(".sub--menu-designer").css({"display" : "none"});
 
-    /* Bottom border animation */
-
 
 })
 

@@ -1,0 +1,334 @@
+/**
+    Importing Base Stylesheets
+*/
+@import url("https://fonts.googleapis.com/css?family=Catamaran:100,400|Encode+Sans+Condensed:100,400,700");
+/**
+    Color Pallete
+*/
+/**
+    Menu Colors
+*/
+/**
+    Importing Components Stylesheets
+*/
+/**
+    Color Pallete
+*/
+/**
+    Menu Colors
+*/
+.site-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px; }
+  .site-menu input {
+    width: 150px;
+    height: 30px;
+    font-size: 9px;
+    text-align: center;
+    outline: none;
+    border-right: 1px solid #424153;
+    border-left: 1px solid #fdadc7;
+    border-top: 1px solid #ea4c88;
+    border-bottom: 1px solid #993399;
+    transition: 1s; }
+  .site-menu input:focus {
+    padding: 2px;
+    width: 170px; }
+
+.clear img {
+  height: 90px; }
+
+.site-deals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-family: Arial;
+  font-weight: lighter;
+  height: 45px; }
+
+.site-logo img {
+  height: 90px; }
+
+.site-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  .site-options ul li {
+    float: left;
+    margin-left: 8px;
+    font-size: 11px;
+    list-style: none;
+    color: #757575; }
+
+.site-secondary-menu {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  background: #fafafa;
+  color: #191919; }
+  .site-secondary-menu ul {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .site-secondary-menu ul li {
+      font-family: "Catamaran";
+      font-size: 13px;
+      font-weight: bolder;
+      list-style-type: none; }
+
+.shipping-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  height: 100px;
+  background: #e6e6e6; }
+  .shipping-info h2 {
+    font-size: 13px;
+    font-weight: bolder; }
+
+.shoe-wrapper {
+  padding-top: 70px;
+  overflow: hidden;
+  box-sizing: border-box; }
+  .shoe-wrapper h1 {
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: bolder; }
+
+.shoes-container {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: repeat(4, 293px);
+  grid-column-gap: 5px;
+  overflow: hidden; }
+  .shoes-container .grid-item {
+    position: relative;
+    width: 283px;
+    height: 495px; }
+    .shoes-container .grid-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0.8;
+      margin-bottom: 0.501em; }
+    .shoes-container .grid-item .grid-item-descr {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      line-height: 0.9375em; }
+      .shoes-container .grid-item .grid-item-descr p {
+        font-size: 0.6375em;
+        opacity: 0.4; }
+      .shoes-container .grid-item .grid-item-descr .item-title {
+        font-size: 1.275em;
+        font-family: "Catamaran";
+        font-weight: lighter;
+        letter-spacing: 0.03em; }
+      .shoes-container .grid-item .grid-item-descr .nike-shop-btn {
+        font-size: 13px;
+        font-family: "Catamaran";
+        letter-spacing: 0.03em; }
+        .shoes-container .grid-item .grid-item-descr .nike-shop-btn:hover {
+          text-decoration: underline; }
+
+video {
+  width: 100%; }
+
+.video-content {
+  position: relative;
+  width: 100%;
+  height: 90vh; }
+  .video-content p {
+    letter-spacing: -0.02em;
+    word-spacing: 0.08em; }
+
+.video-initialize {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; }
+
+.video-subtitle {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  text-align: justify;
+  color: #fff;
+  background: transparent;
+  z-index: 20; }
+  .video-subtitle h2 {
+    font-weight: bolder; }
+  .video-subtitle p {
+    font-size: 13px;
+    max-width: 75ch; }
+  .video-subtitle ul li {
+    font-size: 13px;
+    padding: 2px; }
+    .video-subtitle ul li a {
+      color: white;
+      text-decoration: none; }
+      .video-subtitle ul li a:hover {
+        text-decoration: underline; }
+
+.video-subtitle ul li:hover {
+  color: #fafafa; }
+
+.nike-secondary-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  border-radius: 2px;
+  font-size: 11px;
+  background: #000;
+  color: #fff;
+  transition: 1s;
+  cursor: pointer; }
+  .nike-secondary-btn:hover {
+    color: #191919;
+    background: #fafafa; }
+
+.grid-secondary-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center; }
+  .grid-secondary-wrapper .grid-secondary-content {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    overflow: hidden; }
+    .grid-secondary-wrapper .grid-secondary-content .grid-item {
+      position: relative;
+      width: 633px;
+      height: 567px; }
+      .grid-secondary-wrapper .grid-secondary-content .grid-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      .grid-secondary-wrapper .grid-secondary-content .grid-item .grid-subtitle {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: transparent; }
+        .grid-secondary-wrapper .grid-secondary-content .grid-item .grid-subtitle h1 {
+          font-size: 24px;
+          font-weight: bolder;
+          font-family: "Encode Sans Condensed";
+          padding: 0;
+          margin: 0;
+          color: #171717; }
+        .grid-secondary-wrapper .grid-secondary-content .grid-item .grid-subtitle p {
+          font-weight: 100;
+          color: #191919; }
+        .grid-secondary-wrapper .grid-secondary-content .grid-item .grid-subtitle .nike-secondary-btn:hover {
+          color: white;
+          background-color: #464646; }
+
+.fixed-navbar {
+  position: fixed;
+  width: 100%;
+  height: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  background: #fff;
+  transition: 800ms;
+  z-index: 999; }
+  .fixed-navbar div {
+    width: 33.33%; }
+  .fixed-navbar img {
+    height: 0px; }
+  .fixed-navbar .menu-icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.feature-items-wrapper {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  justify-content: center;
+  align-items: center; }
+  .feature-items-wrapper .feature-items-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+    .feature-items-wrapper .feature-items-grid .small-grid-item {
+      width: 220px;
+      height: 128px; }
+      .feature-items-wrapper .feature-items-grid .small-grid-item ul li {
+        font-size: 12px;
+        line-height: 2em;
+        opacity: 0.4;
+        list-style: none; }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background: #000; }
+  .footer-wrapper .footer-grid {
+    display: grid;
+    width: 60%;
+    height: 60vh;
+    grid-template-columns: repeat(3, 1fr); }
+    .footer-wrapper .footer-grid .footer-grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 228px;
+      color: white; }
+      .footer-wrapper .footer-grid .footer-grid-item .list-bold li {
+        font-size: 14px;
+        font-family: Helvetica;
+        line-height: 2em;
+        font-weight: bold;
+        color: white;
+        list-style: none; }
+      .footer-wrapper .footer-grid .footer-grid-item ul li {
+        font-size: 12px;
+        color: #2e2e2e; }
+
+/**
+    Global Styling
+*/
+body {
+  position: relative;
+  font-family: "Encode Sans Condensed",Arial, Helvetica, sans-serif; }
+
+/** 
+    GLOBAL FONT COLORS
+*/
+.red-font {
+  color: #ff2f2f; }

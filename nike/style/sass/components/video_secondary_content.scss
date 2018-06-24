@@ -1,0 +1,23 @@
+.nike-secondary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 11px;
+    background: #000;
+    color:#fff;
+    transition: 1s;
+
+    cursor: pointer;
+
+    &:hover {
+
+        color: #191919;
+        background: #fafafa;
+    }
+}
+
+

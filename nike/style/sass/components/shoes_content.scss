@@ -1,0 +1,72 @@
+.shoe-wrapper{
+
+    padding-top: 70px;
+    h1{
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.shoes-container{
+
+
+
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: repeat(4, 293px);
+    grid-column-gap: 5px;
+    overflow: hidden;
+
+    .grid-item{
+        position: relative;
+        width: 283px;
+        height:495px;
+        
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            margin-bottom:  0.501em;
+        }
+
+        .grid-item-descr{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            line-height: 0.9375em;
+
+
+            p{
+                font-size: 0.6375em;
+                opacity: 0.4;
+            }
+            
+            .item-title{
+                font-size: 1.275em;
+                font-family: "Catamaran";
+                font-weight: lighter;
+                letter-spacing: 0.03em;
+            }
+
+            .nike-shop-btn{
+                font-size: 13px;
+                font-family: "Catamaran";
+                letter-spacing: 0.03em;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+
+            }          
+        }
+    }
+}
+
