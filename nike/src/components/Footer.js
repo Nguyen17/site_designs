@@ -27,11 +27,22 @@ export default class Footer extends Component {
                                 <li>Returns</li>
                                 <li>Payment Options</li>
                                 <li>Contact Us</li>
-                        
+
+                            </ul>
+                        </div>
+
+                        <div className="footer-grid-item">
+                            <ul>
+                                <li>News</li>
+                                <li>Careern</li>
+                                <li>Converse Culture</li>
+                                <li>Investors</li>
+                                <li>Sustainable Innovation</li>
                             </ul>
                         </div>
 
                     </div>
+
                 </div>
             </div>
         )

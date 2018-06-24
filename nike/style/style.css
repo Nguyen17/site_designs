@@ -317,8 +317,10 @@ video {
         color: white;
         list-style: none; }
       .footer-wrapper .footer-grid .footer-grid-item ul li {
-        font-size: 12px;
-        color: #2e2e2e; }
+        font-size: 14px;
+        color: #878787;
+        list-style: none;
+        line-height: 2em; }
 
 /**
     Global Styling
