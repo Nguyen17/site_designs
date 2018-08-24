@@ -10,6 +10,7 @@ The goal of this project is to improve my web development skills in the areas of
 [Y-3 Original Site](http://store.y-3.com/us)
 
 ### Remaking Nike
+###### *(using react and sass)*
 ![nike_remake_screenshot](https://user-images.githubusercontent.com/17789092/44562291-cbc68a80-a70d-11e8-9ddf-b572ce6ebb6a.jpg)
 [Nike Remake Preview](https://www.useloom.com/embed/db6123dafb6e4e4899ccdd39046d6e8b)
 [Nike Original Site](https://www.nike.com/us/en_us/)
