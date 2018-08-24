@@ -1,0 +1,61 @@
+.nav-primary{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height:80px;
+    background-color: #fff;
+    border-bottom: 2px solid #f4f4f4;
+
+    input{
+        padding: 10px;
+        text-align: left;
+    }
+    h1{
+        margin: 0;
+    }
+    
+    ul{
+        display: block;
+
+        li{
+            list-style-type: none;
+            display: inline-block;
+            font-size: 21px;
+            font-weight: $font-bold;
+            margin-left: 10px;
+
+        }
+    }
+
+    &__shop-acct{
+        ul {
+            li{
+                font-size:14px;
+                font-weight: $font-light;
+            }
+        }
+    }
+
+}
+
+
+.shipping-order{
+  
+    height:60px;
+    background: radial-gradient(#eee,#f4f4f4);
+    text-transform: uppercase;
+
+    h1{
+        margin:0;
+        
+    }
+
+    h5{
+        font-size: 1.25rem;
+    }
+
+}
+

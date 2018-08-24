@@ -1,0 +1,22 @@
+// 3rd Party
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700');
+
+// Base
+@import "base/font";
+@import "base/color";
+@import "base/modules";
+
+// Components
+@import "components/header.scss";
+@import "components/feature-img.scss";
+
+
+
+
+/* GENERAL*/
+body{
+    font-family: $font-primary;
+}
+
+
+
